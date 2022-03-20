@@ -13,6 +13,10 @@ h3 {
   font-size: large;
 }
 
+body {
+  padding-top: 75px;
+}
+
 * {
 font-family: 'Noto Sans KR', sans-serif;
 }
@@ -69,9 +73,28 @@ a:hover {
   color: black;
 }
 
-#oldmove {
+.oldmove {
   color: blue;
+  font-size: large;
+}
+
+.panfontsize {
   font-size: x-large;
+}
+
+#footer {
+  background-color: #e9e9e9;
+}
+
+#inner_footer {
+  float:left;
+  padding: 0px 0px 0px 500px
+}
+
+#makern {
+  color: transparent;
+  background: linear-gradient(to right top, #7DCEA0, #FF5733);
+  -webkit-background-clip: text;
 }
 
 </style>
@@ -80,15 +103,13 @@ a:hover {
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body style="text-align:center;">
-  <div style="padding: 30px;">
-  </div>
   <header>
   <ul>
     <li id="ckmfontsize"><a href="#"><b>CKM</b></a></li>
-    <li><a href=#what>공기 마스크란</a></li>
-    <li><a href=#making>제작 과정</a></li>
-    <li><a href=#pan>판매처</a></li>
-    <li><a href=#guitar>기타</a></li>
+    <li><a href="javascript:window.scrollTo(0, 500);">공기 마스크란</a></li>
+    <li><a href="javascript:window.scrollTo(0, 830);">제작 과정</a></li>
+    <li><a href="javascript:window.scrollTo(0, 7000);">판매처</a></li>
+    <li><a href="javascript:window.scrollTo(0, 7000);">기타</a></li>
   </ul>
   </header>
 <h2>공기 마스크?</h2>
@@ -129,8 +150,17 @@ a:hover {
   </fieldset>
     <br><br><br><img id="guitar" src="trwd.jpg" width="30%"><br><br>
     위 사진은 에어리틱의 특허장입니다.
-    <br><br>사용 글꼴 - Google Noto Sans Kr
-    <br>사용 이미지 출처 - Unsplash
-    <br><br><b><a id="oldmove" href="oldckm.html">구버전 사이트로 이동</a></b><br><br>
+    <div id="footer">
+      <hr>
+      <span id="inner_footer" style="text-align:left;">
+      <br>제작자 - <b id="makern">배현석</b>
+      <br>사용 글꼴 - Google Noto Sans Kr
+      <br>사용 이미지 출처 - Unsplash
+      </span>
+      <div id="inner_footer2">
+      <br><b><a class="oldmove" href="oldckm.html">구버전 사이트로 이동</a></b><br><br></li>
+      <a class="oldmove" href="patchnote.html"><b>패치노트로 이동</a></b><br><br></li>
+    </div>
+    </div>
 </body>
 </html>
